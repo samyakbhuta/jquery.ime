@@ -25,7 +25,7 @@
 }
 
 .imeselector a,
-.ime-disable {
+.imeselector-menu .ime-disable {
 	cursor: pointer;
 	text-decoration: none;
 	outline: none;
@@ -33,6 +33,16 @@
 	line-height: 1em;
 	padding-top: 4px;
 	padding-bottom: 4px;
+}
+
+.imeselector-menu .ime-disable {
+
+	border-top: 1px solid #ddd;
+	margin-top: 6px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	color: #444;
+	background-color: #f0f0f0;
 }
 
 .ime-setting-caret {
@@ -49,12 +59,12 @@
 
 }
 
-span.ime-disable-link {
+.imeselector-menu .ime-disable-link {
 	padding-left: 20px;
 	white-space: nowrap;
 }
 
-span.ime-disable-shortcut {
+.imeselector-menu .ime-disable-shortcut {
 	text-align: right;
 	margin-left: 10px;
 	color: #888;

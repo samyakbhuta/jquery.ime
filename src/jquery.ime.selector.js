@@ -430,6 +430,7 @@
 			this.$menu.find( '.ime-checked' ).removeClass( 'ime-checked' );
 			this.$menu.find( 'li[data-ime-inputmethod=' + inputmethodId + ']' )
 				.addClass( 'ime-checked' );
+			this.$menu.find( 'div.ime-disable' ).show();
 			ime = this.$element.data( 'ime' );
 
 			if ( inputmethodId === 'system' ) {
@@ -459,7 +460,7 @@
 		 */
 		disableIM: function () {
 			this.$menu.find( '.ime-checked' ).removeClass( 'ime-checked' );
-			this.$menu.find( 'div.ime-disable' ).addClass( 'ime-checked' );
+			this.$menu.find( 'div.ime-disable' ).hide();
 			this.$element.data( 'ime' ).disable();
 			this.$imeSetting.find( 'a.ime-name' ).text( '' );
 			this.hide();
@@ -616,7 +617,7 @@
 					'class': 'ime-disable-link',
 					'data-i18n': 'jquery-ime-disable-text'
 				} )
-				.text( 'System input method' ),
+				.text( 'Disable input methods' ),
 			$( '<span>' )
 				.addClass( 'ime-disable-shortcut' )
 				.text( 'CTRL+M' )
