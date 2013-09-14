@@ -528,6 +528,7 @@
 				$imeList = this.$menu.find( '.ime-list' ),
 				imeSelector = this;
 
+			// emtpy the list just to fill it again with new imes for new language selected.
 			$imeList.empty();
 
 			$.each( language.inputmethods, function ( index, inputmethod ) {
